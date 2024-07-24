@@ -15,7 +15,6 @@
     "jsonwebtoken": "^9.0.2",
     "msnodesqlv8": "^4.2.1",
     "mssql": "^11.0.1",
-    "sqlite3": "^5.1.7",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   }
