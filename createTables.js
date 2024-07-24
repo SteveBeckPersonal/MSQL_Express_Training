@@ -3,14 +3,16 @@ const bcrypt = require('bcryptjs');
 
 // SQL Server configuration with Windows Authentication
 const config = {
-    server: 'localhost', // Update with your SQL Server instance name
+    server: 'tcp:capinspired.database.windows.net', // Update with your SQL Server instance name
     database: 'Training',
+    user: 'capi-inspired-training',
+    password:'R?+3C-[M140eSv+z',
     options: {
-        trustedConnection: true, // Use Windows Authentication
-        trustServerCertificate: true
+     
+      trustServerCertificate: true
     },
     driver: "msnodesqlv8", 
-};
+  };
 
 async function createTables() {
     try {

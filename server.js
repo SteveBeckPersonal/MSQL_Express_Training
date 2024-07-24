@@ -11,14 +11,16 @@ const jwtSecret = process.env.JWT_SECRET || 'your_jwt_secret_key';
 
 // SQL Server configuration with Windows Authentication
 const config = {
-    server: 'localhost', // Update with your SQL Server instance name
-    database: 'Training',
-    options: {
-        trustedConnection: true, // Use Windows Authentication
+      server: 'tcp:capinspired.database.windows.net',
+      database: 'capi-inspired-training',
+      user: 'capi-inspired-training',
+      password:'R?+3C-[M140eSv+z',
+      options: {
+       
         trustServerCertificate: true
-    },
-    driver: "msnodesqlv8", 
-};
+      },
+      driver: "msnodesqlv8", 
+    };
 
 // Middleware
 app.use(express.json());
